@@ -119,6 +119,11 @@ body {
 .social__item {
   width: 38px;
   height: 38px;
+  padding: 9px 9px;
   background-color: #EFEEF3;
   border-radius: 5px;
+  position: relative;
+}
+.social__icon {
+  fill: #0D0D0D;
 }/*# sourceMappingURL=main.css.map */
