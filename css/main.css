@@ -109,13 +109,25 @@ body {
   border-radius: 8px;
   border: 1px solid #E5EAF4;
 }
-.cards_icon {
+.cards_item:hover {
+  border: 1px solid #3DB370;
+}
+.cards_item:hover .cards_icon_hover {
+  display: block;
+}
+.cards_item:hover .cards_icon {
+  display: none;
+}
+.cards_icon, .cards_icon_hover {
   width: 64px;
   height: 64px;
   border-radius: 16px;
   border: 1px solid rgba(21, 101, 216, 0.1);
   padding: 14px 20px;
   margin-bottom: 30px;
+}
+.cards_icon_hover, .cards_icon_hover_hover {
+  display: none;
 }
 
 .btn {
@@ -126,6 +138,9 @@ body {
   font-size: 16px;
   font-family: "Roboto";
   font-weight: 600;
+}
+.btn:hover {
+  color: aqua;
 }
 
 .footer {

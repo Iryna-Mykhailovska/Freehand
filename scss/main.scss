@@ -101,16 +101,33 @@ body {
         border-radius: 8px;
         border: 1px solid #E5EAF4;
 
+        &:hover {
+            border:1px solid v.$color-green;
+            & .cards_icon_hover{
+                display: block;
+                // visibility: visible;
+            }
+            & .cards_icon{
+                display: none;
+                // visibility: hidden;
+            }
+        }
+
     }
 
-    &_icon {
+    &_icon, &_icon_hover{
         width: 64px;
         height: 64px;
         border-radius: 16px;
         border: 1px solid rgba(21, 101, 216, 0.1);
         padding: 14px 20px;
         margin-bottom: 30px;
+    &_hover{
+        display: none;
+        // visibility: hidden;
     }
+    }
+    
 }
 
 .btn {
@@ -121,6 +138,10 @@ body {
     font-size: v.$main-font-size;
     font-family: v.$roboto-font-family;
     font-weight: 600;
+
+    &:hover {
+        color: aqua;
+    }
 }
 
 .footer {
